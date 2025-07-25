@@ -1,0 +1,43 @@
+{
+  "name": "employee_tracking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAsger2002/employee_tracking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliAsger2002/employee_tracking/issues"
+  },
+  "homepage": "https://github.com/AliAsger2002/employee_tracking#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ip": "^2.0.0",
+    "joi": "^17.9.2",
+    "joi-password": "^4.1.1",
+    "jsonwebtoken": "^9.0.1",
+    "moment": "^2.29.4",
+    "mongoose": "^7.4.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.4",
+    "winston": "^3.10.0",
+    "winston-mongodb": "^5.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "chance": "^1.1.11",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "random-email": "^1.0.3"
+  }
+}
