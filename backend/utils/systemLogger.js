@@ -43,7 +43,7 @@ const systemLogger = createLogger({
         }),
         new transports.MongoDB({
             level: "info",
-            db: process.env.URL,
+            db: process.env.MONGODB_URI,
             options: {
                 useUnifiedTopology: true
             },
@@ -56,7 +56,7 @@ const systemLogger = createLogger({
         }),
         new transports.MongoDB({
             level: "error",
-            db: process.env.URL,
+            db: process.env.MONGODB_URI,
             options: {
                 useUnifiedTopology: true
             },
