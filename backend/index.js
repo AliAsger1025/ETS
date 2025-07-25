@@ -1,4 +1,5 @@
 let express = require("express");
+const cors = require("cors");
 require("dotenv").config();
 require("./config/modelConfig");
 const logger = require("./utils/systemLogger");
@@ -6,6 +7,20 @@ const mainRouter = require("./urls");
 
 let app = express();
 
+// CORS configuration
+const corsOptions = {
+  origin: [
+    "http://localhost:3000",
+    "https://ets-aliasger1025s-projects.vercel.app",
+    "https://ets-aliasger1025s-projects.vercel.app/"
+  ],
+  credentials: true,
+  optionSuccessStatus: 200,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"]
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/", mainRouter);
 

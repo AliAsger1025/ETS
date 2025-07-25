@@ -33,3 +33,7 @@ pids
 node_modules/.cache/
 .eslintcache
 *.tsbuildinfo
+
+# Environment variables
+.env
+backend/.env
